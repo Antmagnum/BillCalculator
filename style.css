@@ -1,0 +1,63 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+#wrap {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-column: 80px 80px 80px 80px;
+    grid-template-areas: 
+    ". billAmount"
+    ". tipPercent"
+    ". tipAmount"
+    ". totalBill"
+    "btn btn";
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 5%;
+    font-size: 18px;
+    color: rgb(240,240,240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#billAmount {
+    grid-area: billAmount;
+}
+#tipPercent {
+    grid-area: tipPercent;
+}
+#tipAmount {
+    grid-area: tipAmount;
+}
+#totalBill {
+    grid-area: totalBill;
+}
+
+.inputStyling {
+    height: 25px;
+    width: 240px;
+}
+
+.inputNoEdit {
+    background-color: rgba(50,50,50,0.5);
+    color: white;
+}
+
+#btn {
+    grid-area: btn;
+    height: 50px;
+    width: auto;
+    background-color: rgb(140,30,30);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 5%;
+}
