@@ -1,52 +1,40 @@
 body {
     background-image: url("background.jpg");
-    background-size: cover;
+    background-size: 100% auto;
 }
 
-#wrap {
-    background-color: rgba(0, 0, 0, 0.4);
+.grid-container {
+    background-color: rgba(194, 155, 194, 0.7);
     width: 400px;
-    height: 400px;
     display: grid;
-    grid-template-columns: 140px 1fr;
-    grid-column: 80px 80px 80px 80px;
-    grid-template-areas: 
-    ". billAmount"
-    ". tipPercent"
-    ". tipAmount"
-    ". totalBill"
-    "btn btn";
+    row-gap: 2px;
+    column-gap: 2px;
+    grid-template-columns: auto auto;
     margin: 0 auto;
-    border: 5px solid black;
-    padding: 25px;
+    padding: 10px;
     margin-top: 50px;
     border-radius: 5%;
-    font-size: 18px;
-    color: rgb(240,240,240);
+    color: rgb(240, 240, 240);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
-#billAmount {
-    grid-area: billAmount;
+.grid-item {
+    background-color: rgba(250, 150, 250, .2);
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(245, 198, 198);
+    font-weight: bold;
 }
-#tipPercent {
-    grid-area: tipPercent;
-}
-#tipAmount {
-    grid-area: tipAmount;
-}
-#totalBill {
-    grid-area: totalBill;
-}
+
 
 .inputStyling {
     height: 25px;
-    width: 240px;
+    width: 140px;
 }
 
 .inputNoEdit {
-    background-color: rgba(50,50,50,0.5);
+    background-color: rgba(50, 50, 50, 0.5);
     color: white;
 }
 
@@ -54,7 +42,7 @@ body {
     grid-area: btn;
     height: 50px;
     width: auto;
-    background-color: rgb(140,30,30);
+    background-color: rgb(140, 30, 30);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
